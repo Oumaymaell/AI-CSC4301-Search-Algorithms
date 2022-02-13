@@ -52,7 +52,7 @@ In this case, I tried a bigger environment with a bigger plane and multiple obst
 III.	Conclusion:
 
 To conclude, depending on the environment we tackled, the most efficient of the 5 algorithms is A* Manhattan. Also, A* Euclidien had a difference of 0.1 ms compared to it in the timinig it took in both environment 1 and 2. Thus, both A* with Manhattan heuristic and Euclidien heuristic are more optimal than the other algorithms. The one that was the least efficient in two environments was UCS while DFS was the least efficient only in the case where the target was close to the seeker. BFS on the other hand had a short execution time since it explores the shallowest nodes until it reaches the target. Therefore, even though most of the times it explores the same number of nodes as A*, it spends more time because it looks blindly for the goal. Finally, A* with its two different heuristics was complete and optimal compared to the other pathfinding strategies.
- 
+
 References
 
 Sebastian Lague Youtube channel : https://www.youtube.com/watch?v=-L-WgKMFuhE&list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW
