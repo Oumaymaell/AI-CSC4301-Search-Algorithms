@@ -3,6 +3,7 @@ Using unity, @AichaBelghiti2001 and I made a pathfinding project where you exper
 In this project, aisha Belghiti and I reproduced the pathfinding project of @SebLague and tried different search algorithms (DFS, BFS, UCS, A*) and heuristic strategies (Manhattan, Euclidien) with the same cost in all directions. While running this project, you can see different paths resulting from the pathfinding algorithms simultaneously with different colours. You can see also the total time each strategy takes and the number of nodes explored.
 
 I.	Introduction:
+
 The analysis will be done based on Unity’s simulations to see different pathfinding algorithms running simultaneously along with the amount of time taken to run them and the number of nodes explored. In each experiment, I ran only 4 pathfinding algorithms and then added DFS in the next experiment using the same environment. I did that only because it covers a large space which makes it difficult to make observations. First, I would like to mention what color correspond to each path: Cyan: DFS, Yellow: BFS, White: UCS, Magenta: A* Euclidien, Green: A*Manhattan. For the seeker and the target, the yellow node is for the seeker and the red one is for the target. 
 
 II.	Simulation:
@@ -49,9 +50,11 @@ Figure 6: The message displayed as a result of running the pathfinding algorithm
 In this case, I tried a bigger environment with a bigger plane and multiple obstacles. However, in such a big environment with 5 pathfinding algorithms the system crashed. I received different error messages including the one shared in figure 6. In this message, we can clearly conclude that the pathfinding algorithms need more space in memory than the one allocated. Thus, the system ran out of memory and then crashed. Another message was related to the GPU where it states that there is not enough space in the memory to allocate for the GPU.
 
 III.	Conclusion:
+
 To conclude, depending on the environment we tackled, the most efficient of the 5 algorithms is A* Manhattan. Also, A* Euclidien had a difference of 0.1 ms compared to it in the timinig it took in both environment 1 and 2. Thus, both A* with Manhattan heuristic and Euclidien heuristic are more optimal than the other algorithms. The one that was the least efficient in two environments was UCS while DFS was the least efficient only in the case where the target was close to the seeker. BFS on the other hand had a short execution time since it explores the shallowest nodes until it reaches the target. Therefore, even though most of the times it explores the same number of nodes as A*, it spends more time because it looks blindly for the goal. Finally, A* with its two different heuristics was complete and optimal compared to the other pathfinding strategies.
  
 References
+
 Sebastian Lague Youtube channel : https://www.youtube.com/watch?v=-L-WgKMFuhE&list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW
 Github course code: https://github.com/SebLague/Pathfinding 
 
