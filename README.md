@@ -1,2 +1,3 @@
 # AI-CSC4301-Search-Algorithms
-Uisng unity, make a pathfinding project where you experiment different search and heuristic strategies and compare between them.
+Using unity, @AichaBelghiti2001 and I made a pathfinding project where you experiment different search and heuristic strategies and compare between them.
+In this project, aisha Belghiti and I reproduced the pathfinding project of @SebLague and tried different search algorithms (DFS, BFS, UCS, A*) and heuristic strategies (Manhattan, Euclidien) with the same cost in all directions. While running this project, you can see different paths resulting from the pathfinding algorithms simultaneously with different colours. You can see also the total time each strategy takes and the number of nodes explored.
